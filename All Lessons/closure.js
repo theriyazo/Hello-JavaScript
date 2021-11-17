@@ -1,10 +1,12 @@
-function x(){
-    var a = 10;
-    return function y(){
-        console.log(a);
+function z(){
+    var b = 900;
+    function x(){
+        var a=10;
+        function y(){
+            console.log(a, b);
+        }
+        y();
     }
+	x();
 }
-// after multiple line of code
-
-var z = x();
 z();
